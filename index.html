@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Service Cards</title>
+    <!-- Tailwind CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <style>
+        /* Background with a diagonal split between two colors */
+        body {
+            background: linear-gradient(-26deg, #ead3fd 50%, #5E2A91 50%);
+            height: 100vh;
+        }
+        
+        /* Add rotation on hover for each card */
+        .card {
+            transition: transform 0.5s;
+        }
+        .card:hover {
+            transform: rotate(360deg);
+        }
+        
+        /* Increase the size of icons */
+        .icon i {
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Service section with a title and service cards -->
+    <div id="assignment" class="p-8">
+        <h1 class="text-4xl font-bold text-center mb-8 text-white">OUR SERVICES</h1>
+        <div class="flex justify-center space-x-4">
+            <!-- Card 1: Emergency Plumbing Services -->
+            <div class="card bg-white rounded-lg shadow-lg p-4 text-center w-64">
+                <div class="flex justify-center mb-4 icon">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <h2 class="font-semibold text-lg">Emergency Plumbing Services</h2>
+                <p class="text-gray-600">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
+                <a href="#" class="text-blue-500 hover:underline">EXPLORE THIS SERVICE</a>
+            </div>
+
+            <!-- Card 2: Plumbing and Drains -->
+            <div class="card bg-white rounded-lg shadow-lg p-4 text-center w-64">
+                <div class="flex justify-center mb-4 icon">
+                    <i class="fas fa-faucet"></i>
+                </div>
+                <h2 class="font-semibold text-lg">Plumbing and Drains</h2>
+                <p class="text-gray-600">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+                <a href="#" class="text-blue-500 hover:underline">EXPLORE THIS SERVICE</a>
+            </div>
+
+            <!-- Card 3: Water Damage -->
+            <div class="card bg-white rounded-lg shadow-lg p-4 text-center w-64">
+                <div class="flex justify-center mb-4 icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <h2 class="font-semibold text-lg">Water Damage</h2>
+                <p class="text-gray-600">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                <a href="#" class="text-blue-500 hover:underline">EXPLORE THIS SERVICE</a>
+            </div>
+
+            <!-- Card 4: Water Heaters -->
+            <div class="card bg-white rounded-lg shadow-lg p-4 text-center w-64">
+                <div class="flex justify-center mb-4 icon">
+                    <i class="fas fa-burn"></i>
+                </div>
+                <h2 class="font-semibold text-lg">Water Heaters</h2>
+                <p class="text-gray-600">Trust Roto-Rooter for repair and replacement of gas, electric, and tankless water heaters.</p>
+                <a href="#" class="text-blue-500 hover:underline">EXPLORE THIS SERVICE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/e0a583f11a.js" crossorigin="anonymous"></script>
+</body>
+</html>
